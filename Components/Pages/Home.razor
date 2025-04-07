@@ -1,0 +1,85 @@
+﻿@page "/"
+
+<PageTitle>Welcome to Our Cinema</PageTitle>
+
+<div class="cinema-entrance-container">
+    <div class="overlay">
+        <div class="container text-center py-5">
+            <img src="images/cinema-logo.png" alt="Cinema Logo" class="img-fluid rounded-circle shadow-lg mb-4 animated-logo" style="max-width: 150px;">
+
+            <h1 class="display-3 text-warning mb-3 animated-title">Welcome to Blazor Cinema</h1>
+
+            <p class="lead text-light mb-5 animated-subtitle">
+                Experience the magic of movies in a comfortable and stylish setting.
+            </p>
+
+            <div class="row justify-content-center mb-5 animated-buttons">
+                <div class="col-md-4">
+                    <a href="/movies" class="btn btn-primary btn-lg shadow-sm"><i class="bi bi-film me-2"></i> Now Showing</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/comingsoon" class="btn btn-info btn-lg shadow-sm"><i class="bi bi-calendar-plus me-2"></i> Coming Soon</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8">
+                    <div id="carouselExampleIndicators" class="carousel slide shadow-lg rounded" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="~/assets/images/madMaxFuryRoad.jpeg" 
+                                class="d-block w-100" 
+                                alt="Featured Movie 1" 
+                                onerror="this.src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQfQoxwQ75vyQPYIKDDx4ZA40KyhhCcsQLweC_Ahu1JEXI3sZBi&psig=AOvVaw14rK8HC2AlwHTPb2SCKmsJ&ust=1744102330767000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCf0NDFxYwDFQAAAAAdAAAAABAE';"> 
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9E6WapCXR_5Ajas-UAswvxwBa-7RJdDD7HNcJfGMHwWficHnmkrLSEa3p-_skbY54tqm6rw" 
+                                class="d-block w-100" 
+                                alt="Featured Movie 2" 
+                                onerror="this.src='images/placeholder-movie-wide.png';">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIDRiRq4pg_FxA9rskgKkh2z4GevpSm6zejevBZEwpuOv7t6mM667elUmhsLH6693c0K0RGQ" 
+                                class="d-block w-100" 
+                                alt="Featured Movie 3" 
+                                onerror="this.src='images/placeholder-movie-wide.png';">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 bg-light">
+
+            <p class="text-light fst-italic animated-quote">
+                "There's nothing like the big screen experience."
+            </p>
+
+            <div class="mt-5 text-light animated-social">
+                <h4 class="mb-3">Follow Us</h4>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-outline-light btn-social me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-social me-2"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
