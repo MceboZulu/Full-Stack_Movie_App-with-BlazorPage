@@ -34,9 +34,8 @@ This is a simple movie web application built using Blazor Pages for the front-en
 
 2.  **Navigate to the project directory:**
     ```bash
-    cd MovieWebApp
+    cd BlazorWebAppMovies
     ```
-    (Adjust the directory name as needed)
 
 3.  **Build the project:**
     ```bash
